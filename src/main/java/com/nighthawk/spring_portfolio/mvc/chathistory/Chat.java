@@ -47,6 +47,7 @@ public class Chat implements Serializable, Comparable<Chat> {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    //fields added here will be automatically updated in json method
     private String chatMessage;
     private String chatResponse;
     private Date timestamp;

@@ -199,7 +199,6 @@ public class AIChatbotController {
 		}
 
 		// get response
-		// TODO error handling
 		String getResponseUrl = "https://api.openai.com/v1/threads/" + threadId + "/messages";
 
 		JSONObject rObj = sendHttpGet(getResponseUrl, contentType, auth, openAiBeta, org);
